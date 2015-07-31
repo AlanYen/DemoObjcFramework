@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="aC4-4i-TVk">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="4TW-OE-dHK" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V8m-tg-WPe"/>
+                        <viewControllerLayoutGuide type="bottom" id="4a2-sp-S8k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b4O-IY-BJd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wyr-NC-xb0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleswifticon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3la-If-Rjj">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Dda-W4-Q4l"/>
+                                    <constraint firstAttribute="width" constant="200" id="x3h-BD-ECG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wyr-NC-xb0" secondAttribute="trailing" id="ETd-j7-rmB"/>
+                            <constraint firstItem="Wyr-NC-xb0" firstAttribute="leading" secondItem="b4O-IY-BJd" secondAttribute="leading" id="fVG-dI-Uzl"/>
+                            <constraint firstItem="Wyr-NC-xb0" firstAttribute="top" secondItem="b4O-IY-BJd" secondAttribute="top" id="my2-Wu-Ll9"/>
+                            <constraint firstAttribute="centerX" secondItem="3la-If-Rjj" secondAttribute="centerX" id="wxy-3v-st3"/>
+                            <constraint firstAttribute="bottom" secondItem="Wyr-NC-xb0" secondAttribute="bottom" id="xCa-di-mgG"/>
+                            <constraint firstAttribute="centerY" secondItem="3la-If-Rjj" secondAttribute="centerY" id="xpp-9f-sY0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="Wyr-NC-xb0" id="Gyo-xT-Pu1"/>
+                        <outlet property="logoImageView" destination="3la-If-Rjj" id="iIF-hV-JLy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3X-Zr-tFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="364"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appleswifticon.png" width="440" height="322"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

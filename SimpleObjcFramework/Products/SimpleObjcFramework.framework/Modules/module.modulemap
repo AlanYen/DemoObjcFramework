@@ -1,0 +1,6 @@
+framework module SimpleObjcFramework {
+  umbrella header "SimpleObjcFramework.h"
+
+  export *
+  module * { export * }
+}
