@@ -58,6 +58,7 @@
     TestXibView *testXibView = [[frameworkBundle loadNibNamed:@"TestXibView" owner:vc options:nil] firstObject];
     if (testXibView) {
         testXibView.frame = CGRectMake(0.0f, 20.0f, CGRectGetWidth(vc.view.frame), 88.0f);
+        testXibView.backgroundColor = [UIColor redColor];
         [vc.view addSubview:testXibView];
     }
     return (TestViewController*)vc;
