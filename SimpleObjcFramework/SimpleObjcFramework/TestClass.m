@@ -9,6 +9,7 @@
 #import "TestClass.h"
 #import "TestViewController.h"
 #import "ThirdpartyClass.h"
+#import "TestXibView.h"
 
 @implementation TestClass
 
@@ -46,6 +47,20 @@
     NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"com.test.framework"];
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Test" bundle:frameworkBundle];
     TestViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TestViewController"];
+    return (TestViewController*)vc;
+}
+
+- (TestViewController*)loadTestControllerAndXibFromFramework {
+    NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"com.test.framework"];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Test" bundle:frameworkBundle];
+    TestViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TestViewController"];
+    
+    TestXibView *testXibView = [[frameworkBundle loadNibNamed:@"TestXibView" owner:vc options:nil] firstObject];
+    if (testXibView) {
+        testXibView.frame = CGRectMake(0.0f, 20.0f, CGRectGetWidth(vc.view.frame), 88.0f);
+        testXibView.backgroundColor = [UIColor redColor];
+        [vc.view addSubview:testXibView];
+    }
     return (TestViewController*)vc;
 }
 
