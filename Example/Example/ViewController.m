@@ -38,7 +38,8 @@
     TestClass *test = [[TestClass alloc] init];
     [test printLog];
     
-    TestViewController *vc = (TestViewController*)[test loadTestControllerFromFramework];
+    //TestViewController *vc = (TestViewController*)[test loadTestControllerFromFramework];
+    TestViewController *vc = (TestViewController*)[test loadTestControllerAndXibFromFramework];
     UIImage *logoImage = [test loadTestImageFromFrameworkBundle];
     if (logoImage) {
         vc.logoImage = logoImage;

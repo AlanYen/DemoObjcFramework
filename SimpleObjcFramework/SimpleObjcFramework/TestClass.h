@@ -16,6 +16,7 @@
 - (UIImage*)loadTestImageFromFrameworkBundle;
 - (UIImage*)loadTestImageFromFrameworkXCassets;
 - (TestViewController*)loadTestControllerFromFramework;
+- (TestViewController*)loadTestControllerAndXibFromFramework;
 - (void)useThirdpartyClassInFramework;
 
 @end

@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2D6B3BB61B6F0C2D00709A67 /* TestXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6B3BB51B6F0C2D00709A67 /* TestXibView.xib */; };
+		2D6B3BB91B6F0C5500709A67 /* TestXibView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6B3BB71B6F0C5500709A67 /* TestXibView.h */; };
+		2D6B3BBA1B6F0C5500709A67 /* TestXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6B3BB81B6F0C5500709A67 /* TestXibView.m */; };
 		2DF608C21B69C89D00067BAA /* SimpleObjcFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF608C11B69C89D00067BAA /* SimpleObjcFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2DF608C81B69C89D00067BAA /* SimpleObjcFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF608BC1B69C89D00067BAA /* SimpleObjcFramework.framework */; };
 		2DF608CF1B69C89D00067BAA /* SimpleObjcFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF608CE1B69C89D00067BAA /* SimpleObjcFrameworkTests.m */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D6B3BB51B6F0C2D00709A67 /* TestXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestXibView.xib; sourceTree = "<group>"; };
+		2D6B3BB71B6F0C5500709A67 /* TestXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestXibView.h; sourceTree = "<group>"; };
+		2D6B3BB81B6F0C5500709A67 /* TestXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestXibView.m; sourceTree = "<group>"; };
 		2DF608BC1B69C89D00067BAA /* SimpleObjcFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleObjcFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF608C01B69C89D00067BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DF608C11B69C89D00067BAA /* SimpleObjcFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleObjcFramework.h; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 				2DF609511B6A133100067BAA /* Test.storyboard */,
 				2DF609521B6A133100067BAA /* TestViewController.h */,
 				2DF609531B6A133100067BAA /* TestViewController.m */,
+				2D6B3BB51B6F0C2D00709A67 /* TestXibView.xib */,
+				2D6B3BB71B6F0C5500709A67 /* TestXibView.h */,
+				2D6B3BB81B6F0C5500709A67 /* TestXibView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -171,6 +180,7 @@
 			files = (
 				2DF608C21B69C89D00067BAA /* SimpleObjcFramework.h in Headers */,
 				2DF608DA1B69C97600067BAA /* TestClass.h in Headers */,
+				2D6B3BB91B6F0C5500709A67 /* TestXibView.h in Headers */,
 				2DF609551B6A133100067BAA /* TestViewController.h in Headers */,
 				2DF609681B6A1FC200067BAA /* ThirdpartyClass.h in Headers */,
 			);
@@ -263,6 +273,7 @@
 				2DF608E61B6A0D6C00067BAA /* objective-c-logo.jpg in Resources */,
 				2DF609541B6A133100067BAA /* Test.storyboard in Resources */,
 				2DF6094F1B6A125700067BAA /* Media.xcassets in Resources */,
+				2D6B3BB61B6F0C2D00709A67 /* TestXibView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +309,7 @@
 			files = (
 				2DF609691B6A1FC200067BAA /* ThirdpartyClass.m in Sources */,
 				2DF609561B6A133100067BAA /* TestViewController.m in Sources */,
+				2D6B3BBA1B6F0C5500709A67 /* TestXibView.m in Sources */,
 				2DF608DB1B69C97600067BAA /* TestClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +532,7 @@
 				2DF608D41B69C89D00067BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DF608D51B69C89D00067BAA /* Build configuration list for PBXNativeTarget "SimpleObjcFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +541,7 @@
 				2DF608D71B69C89D00067BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DF6095C1B6A13B100067BAA /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +550,7 @@
 				2DF6095E1B6A13B100067BAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
