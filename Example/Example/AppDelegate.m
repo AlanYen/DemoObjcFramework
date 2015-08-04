@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <UXTesting/UXTesting.h>
 
 @interface AppDelegate ()
 

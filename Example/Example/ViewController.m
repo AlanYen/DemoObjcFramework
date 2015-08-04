@@ -10,6 +10,8 @@
 #import <SimpleObjcFramework/TestClass.h>
 #import <SimpleObjcFramework/TestViewController.h>
 #import "ThirdpartyClass.h"
+#import "AFNetworking.h"
+#import "SDWebImageManager.h"
 
 @interface ViewController ()
 
@@ -24,8 +26,10 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self DemoUIAndImage];
-    [self DemoUseModule];
+    [self demoUIAndImage];
+    [self demoUseModule];
+    [self demoAFNetworking];
+    [self demoSDWebImage];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +37,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)DemoUIAndImage {
+#pragma mark -
+#pragma mark - [Test method in Framework]
+
+- (void)demoUIAndImage {
     
     TestClass *test = [[TestClass alloc] init];
     [test printLog];
@@ -53,13 +60,28 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)DemoUseModule {
+- (void)demoUseModule {
     
     TestClass *test = [[TestClass alloc] init];
     [test useThirdpartyClassInFramework];
 
     ThirdpartyClass *thirdpartyClass = [[ThirdpartyClass alloc] init];
     [thirdpartyClass printLog];
+}
+
+#pragma mark -
+#pragma mark - [CocoaPods: third party modules]
+
+- (void)demoAFNetworking {
+    AFNetworkReachabilityManager *manager;
+    manager = [AFNetworkReachabilityManager sharedManager];
+    NSLog(@"Is networking reachable: %@", [manager isReachable] ? @"YES" : @"NO");
+}
+
+- (void)demoSDWebImage {
+    SDWebImageManager *manager;
+    manager = [SDWebImageManager sharedManager];
+    NSLog(@"Is SDWebImageManager running: %@", [manager isRunning] ? @"YES" : @"NO");
 }
 
 @end
